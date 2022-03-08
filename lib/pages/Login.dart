@@ -14,7 +14,7 @@ class _LoginState extends State<Login> {
       appBar: AppBar(),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.fromLTRB(20, 10, 20, 10),
+          padding: EdgeInsets.fromLTRB(20, 20, 20, 10),
           child: Column(
             children: [
               Image.asset('assets/images/Login.png'),
