@@ -17,7 +17,7 @@ void main() {
 
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    initialRoute: Routes.movieListRoute,
+    initialRoute: Routes.homeRoute,
     routes: {
       Routes.homeRoute: (context)=> Home(),
       Routes.loginRoute : (context)=> Login(),

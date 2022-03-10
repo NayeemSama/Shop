@@ -23,34 +23,38 @@ class HomeDrawer extends StatelessWidget {
                 ),
               )
           ),
-          ListTile(
-            onTap: (){
-              Navigator.pushNamed(context, Routes.homeRoute);
-            },
-            leading: Icon(Icons.home,
-              color: Colors.black,
-            ),
-            title: Text('Home',
-              style: TextStyle(
-                fontSize: 20,
-                color: Colors.black
+          Card(
+            child: ListTile(
+              onTap: (){
+                Navigator.pushNamed(context, Routes.loginRoute);
+              },
+              leading: Icon(Icons.login,
+                color: Colors.black,
+              ),
+              title: Text('Login',
+                style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.black
+                ),
               ),
             ),
           ),
-          ListTile(
-            onTap: (){
-              Navigator.pushNamed(context, Routes.loginRoute);
-            },
-            leading: Icon(Icons.login,
-              color: Colors.black,
-            ),
-            title: Text('Login',
-              style: TextStyle(
-                  fontSize: 20,
-                  color: Colors.black
+          Card(
+            child: ListTile(
+              onTap: (){
+                Navigator.pushNamed(context, Routes.movieListRoute);
+              },
+              leading: Icon(Icons.list,
+                color: Colors.black,
+              ),
+              title: Text('Movie List',
+                style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.black
+                ),
               ),
             ),
-          )
+          ),
         ],
       ),
     );
