@@ -55,6 +55,54 @@ class HomeDrawer extends StatelessWidget {
               ),
             ),
           ),
+          Card(
+            child: ListTile(
+              onTap: (){
+                Navigator.pushNamed(context, Routes.alertDialogWidgetRoute);
+              },
+              leading: Icon(Icons.add_alert,
+                color: Colors.black,
+              ),
+              title: Text('Alert Dialog',
+                style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.black
+                ),
+              ),
+            ),
+          ),
+          Card(
+            child: ListTile(
+              onTap: (){
+                Navigator.pushNamed(context, Routes.bottomNavigationWidgetRoute);
+              },
+              leading: Icon(Icons.arrow_downward,
+                color: Colors.black,
+              ),
+              title: Text('Bottom Navigation',
+                style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.black
+                ),
+              ),
+            ),
+          ),
+          Card(
+            child: ListTile(
+              onTap: (){
+                Navigator.pushNamed(context, Routes.bottomSheetWidgetRoute);
+              },
+              leading: Icon(Icons.filter_list,
+                color: Colors.black,
+              ),
+              title: Text('Bottom Sheet',
+                style: TextStyle(
+                    fontSize: 20,
+                    color: Colors.black
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );

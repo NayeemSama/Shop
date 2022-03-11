@@ -52,8 +52,15 @@ class _LoginState extends State<Login> {
                     return null;
                   },
                   decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(40)),
+                    ),
                     hintText: "Enter Username",
                     labelText: "Username",
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(40)),
+                      borderSide: BorderSide(color: Colors.blue, width: 2.0),
+                    )
                   ),
                   onChanged: (value){
                     uname = value;
@@ -73,8 +80,15 @@ class _LoginState extends State<Login> {
                   },
                   obscureText: true,
                   decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(40)),
+                    ),
                     hintText: "Enter Password",
                     labelText: "Password",
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(40)),
+                      borderSide: BorderSide(color: Colors.blue, width: 2.0),
+                    )
                   ),
                 ),
                 SizedBox(height: 20,),

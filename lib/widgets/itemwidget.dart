@@ -25,8 +25,26 @@ class ItemWidget extends StatelessWidget {
             child: Row(
               children: <Widget>[
                 Container(
+                  width: 130,
                   color: Colors.white,
-                  child: Image.network( 'https://image.tmdb.org/t/p/w500'+ model.poster ),
+                  child: model.poster=='' ?
+                  (Text('Image not found')) :
+                  Image.network( 'https://image.tmdb.org/t/p/w500'+ model.poster ,
+                    fit: BoxFit.fill,
+                    loadingBuilder: (BuildContext context, Widget child, ImageChunkEvent? loadingProgress) {
+                    if (loadingProgress == null){
+                      return child;
+                    }
+                    return Center(
+                      child: CircularProgressIndicator(
+                        value: loadingProgress.expectedTotalBytes != null
+                            ? loadingProgress.cumulativeBytesLoaded /
+                            loadingProgress.expectedTotalBytes!
+                            : null,
+                      ),
+                    );
+                  },
+                  ),
                 ),
                 SizedBox(width: 10),
                 Expanded(
