@@ -11,4 +11,7 @@ class Routes{
   static String carouselWidgetRoute = "/carouselWidget";
   static String gridViewWidgetRoute = "/gridViewWidget";
   static String animationWidgetRoute = "/animationWidget";
+  static String userDatabaseRoute = "/userDatabase";
+  static String languageRoute = "/languageRoute";
+  static String sharedPreferenceRoute = "/sharedPreference";
 }

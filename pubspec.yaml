@@ -23,11 +23,34 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+
+  #FONTS
   google_fonts: ^2.3.1
+
+  #FOR API
   http: ^0.13.1
   flutter_staggered_animations: "^1.0.0"
+
+  #TOAST
   fluttertoast: ^8.0.9
+
+  #CAROUSEL
   carousel_slider: ^4.0.0
+
+  #FOR SQLITE
+  sqflite: ^2.0.2
+  path: ^1.8.1
+
+  #FOR LOCALIZATION
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.17.0
+
+  #FOR SHARED PREFERENCES
+  shared_preferences: ^2.0.13
+
+  #FOR FIREBASE
+  firebase_core: ^1.13.1
 
 
 
@@ -49,6 +72,7 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+  generate: true
 
   # To add assets to your application, add an assets section, like this:
   assets:
@@ -79,3 +103,5 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+flutter_intl:
+  enabled: true

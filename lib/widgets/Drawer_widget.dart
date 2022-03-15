@@ -14,6 +14,9 @@ class HomeDrawer extends StatelessWidget {
     Routes.carouselWidgetRoute,
     Routes.gridViewWidgetRoute,
     Routes.animationWidgetRoute,
+    Routes.userDatabaseRoute,
+    Routes.languageRoute,
+    Routes.sharedPreferenceRoute,
   ];
 
   var pageName = [
@@ -27,6 +30,9 @@ class HomeDrawer extends StatelessWidget {
     'Carousel',
     'Grid View',
     'Animation',
+    'User Database',
+    'Language',
+    'Shared Preference'
   ];
 
   var pageIcon = [
@@ -39,7 +45,10 @@ class HomeDrawer extends StatelessWidget {
     Icons.tab,
     Icons.workspaces_outline,
     Icons.grid_on_rounded,
-    Icons.star
+    Icons.star,
+    Icons.supervised_user_circle_rounded,
+    Icons.language,
+    Icons.share
   ];
 
   @override
