@@ -6,4 +6,9 @@ class Routes{
   static String alertDialogWidgetRoute = "/alertDialogWidget";
   static String bottomNavigationWidgetRoute = "/bottomNavigationWidget";
   static String bottomSheetWidgetRoute = "/bottomSheetWidget";
+  static String tableWidgetRoute = "/tableWidget";
+  static String tabBarWidgetRoute = "/tabBarWidget";
+  static String carouselWidgetRoute = "/carouselWidget";
+  static String gridViewWidgetRoute = "/gridViewWidget";
+  static String animationWidgetRoute = "/animationWidget";
 }

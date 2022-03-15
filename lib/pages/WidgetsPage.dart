@@ -36,8 +36,13 @@ class _WidgetsPageState extends State<WidgetsPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
-            CupertinoButton.filled(onPressed: () {},
-              child: const Text('Enabled'),),
+            ConstrainedBox(
+              constraints: BoxConstraints(
+                minHeight: 100
+              ),
+              child: CupertinoButton.filled(onPressed: () {},
+                child: const Text('Enabled'),),
+            ),
             Container(
                 height: 200,
                 width: 300,
@@ -46,8 +51,13 @@ class _WidgetsPageState extends State<WidgetsPage> {
                   child: Align(
                     alignment: Alignment.bottomLeft,
                     child: Padding(padding: EdgeInsets.all(10),
-                    child: Container(height: 100,
-                      width: 100,color: Colors.blue,)),
+                    child: ConstrainedBox(
+                      constraints: BoxConstraints(
+                        maxWidth: 200,
+                        maxHeight: 100
+                      ),
+                      child: Container(color: Colors.blue,),
+                    )),
                   ),
                 ),
             ),

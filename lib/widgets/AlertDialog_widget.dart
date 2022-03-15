@@ -15,6 +15,10 @@ class AlertDialogWidget extends StatelessWidget {
           onPressed: () => showDialog<String>(
             context: context,
             builder: (BuildContext context) => AlertDialog(
+              backgroundColor: Colors.pink,
+              actionsAlignment: MainAxisAlignment.center,
+              alignment: Alignment.bottomRight,
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(50)),
               title: const Text('AlertDialog Title'),
               content: const Text('AlertDialog description'),
               actions: <Widget>[

@@ -15,8 +15,10 @@ class _BottomSheetWidgetState extends State<BottomSheetWidget> {
         title: Text('Bottom Sheet'),
       ),
       body: Builder(
-        builder: (context)=> Center(
-          child: ElevatedButton(onPressed: () {
+        builder: (context)=> Container(
+          alignment: Alignment.center,
+          child: ElevatedButton(
+            onPressed: () {
             Scaffold.of(context).showBottomSheet<void>(
                 (BuildContext context) {
                   return Container(
@@ -25,7 +27,8 @@ class _BottomSheetWidgetState extends State<BottomSheetWidget> {
                         color: Colors.blueGrey,
                     ),
                     height: 200,
-                    child: Center(
+                    child: Container(
+                      alignment: Alignment.center,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         mainAxisSize: MainAxisSize.min,
